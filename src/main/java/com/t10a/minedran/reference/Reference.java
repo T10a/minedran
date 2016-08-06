@@ -9,4 +9,31 @@ public class Reference
 
     public static final String CLIENT_PROXY_CLASS = "com.t10a.minedran.proxy.ClientProxy";
     public static final String SERVER_PROXY_CLASS = "com.t10a.minedran.proxy.ServerProxy";
+
+    public static final String SHORTNAME = "md";
+
+    public static enum ItemBase
+    {
+        MACE("mace", "ItemMace");
+
+        private String unlocalizedName;
+        private String registryName;
+
+        ItemBase(String unlocalizedName, String registryName)
+        {
+            this.unlocalizedName = unlocalizedName;
+            this.registryName = registryName;
+        }
+
+        public String getRegistryName()
+        {
+            return registryName;
+        }
+
+        public String getUnlocalizedName()
+        {
+            return unlocalizedName;
+        }
+    }
 }
+
