@@ -1,0 +1,16 @@
+[
+{
+  "modid": "minedran",
+  "name": "Minedran",
+  "description": "A mod for Minecraft that adds more weapons, tools, and other things to do. Inspired by the Souls series, Terraria, Terrafirmacraft, and Minefantasy, with a sprinkle of generic fantasy.",
+  "version": "1.10.2-PREALPHA",
+  "mcversion": "1.10.2",
+  "url": "https://github.com/T10a/minedran",
+  "updateUrl": "",
+  "authorList": ["T-10a"],
+  "credits": "Vazkii for his reaping code, and MrCrayfish for his nifty tutorials.",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
