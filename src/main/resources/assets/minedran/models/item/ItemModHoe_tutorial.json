@@ -1,6 +1,6 @@
 {
     "parent": "item/handheld",
     "textures": {
-        "layer0": "minedran:items/mace_diamond"
+        "layer0": "minedran:items/modhoe_tutorial"
     }
 }

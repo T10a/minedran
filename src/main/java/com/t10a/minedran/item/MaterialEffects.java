@@ -9,7 +9,6 @@ import net.minecraft.potion.PotionEffect;
 
 public class MaterialEffects
 {
-
     public static void effectsOnAttack(final Item.ToolMaterial material, final EntityLivingBase target, final EntityLivingBase attacker)
     {
         if (material.equals(ModItems.TUTORIAL))

@@ -12,9 +12,14 @@ public class Reference
 
     public static final String SHORTNAME = "md";
 
-    public static enum ItemBase
+    public enum ItemBase
     {
-        MACE("mace", "ItemMace");
+        MACE("mace", "ItemMace"),
+        MODSWORD("modsword","ItemModSword"),
+        MODAXE("modaxe","ItemModAxe"),
+        MODPICKAXE("modpickaxe", "ItemModPickaxe"),
+        MODSHOVEL("modshovel", "ItemModShovel"),
+        MODHOE("modhoe", "ItemModHoe");
 
         private String unlocalizedName;
         private String registryName;
