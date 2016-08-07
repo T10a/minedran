@@ -1,10 +1,15 @@
 item.minedran.mace_wood.name=Wooden Mace
+item.minedran.scythe_wood.name=Wooden Scythe
 item.minedran.mace_stone.name=Stone Mace
+item.minedran.scythe_stone.name=Stone Scythe
 item.minedran.mace_iron.name=Iron Mace
+item.minedran.scythe_iron.name=Iron Scythe
 item.minedran.mace_gold.name=Golden Mace
+item.minedran.scythe_gold.name=Golden Scythe
 item.minedran.shears_gold.name=Golden Shears
 item.minedran.mace_diamond.name=Diamond Mace
 item.minedran.shears_diamond.name=Diamond Shears
+item.minedran.scythe_diamond.name=Diamond Scythe
 
 item.minedran.tutorial.name=Placeholder Tutorial Item
 item.minedran.modaxe_tutorial.name=Placeholder Tutorial Axe
@@ -14,3 +19,4 @@ item.minedran.modshovel_tutorial.name=Placeholder Tutorial Shovel
 item.minedran.modhoe_tutorial.name=Placeholder Tutorial Hoe
 item.minedran.mace_tutorial.name=Placeholder Tutorial Mace
 item.minedran.shears_tutorial.name=Placeholder Tutorial Shears
+item.minedran.scythe_tutorial.name=Placeholder Tutorial Scythe

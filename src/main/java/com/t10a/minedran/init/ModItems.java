@@ -30,6 +30,12 @@ public class ModItems
     public static Item shears_gold;
     public static Item shears_diamond;
     public static Item shears_tutorial;
+    public static Item scythe_wood;
+    public static Item scythe_stone;
+    public static Item scythe_iron;
+    public static Item scythe_gold;
+    public static Item scythe_diamond;
+    public static Item scythe_tutorial;
 
     //public static Item.ToolMaterial <new toolmaterial name>
     public static Item.ToolMaterial TUTORIAL;
@@ -49,7 +55,7 @@ public class ModItems
         * Does the texture for items made of the tutorial material obliterate your eyes? Good news! This is a placeholder that will go once I finish up the stuff I want to add.
         * TODO MATERIALS: COPPER, BRONZE, SILVER, STEEL, maybe others
         * TODO for registry(?): Ore Dictionary support. That might come later, once I have to worry about materials that are likely to overlap with other mods.
-        * If you want, add a special effect to the material in the MaterialEffects class! This helps spice up variety. I'm yet to test if this works with Vanilla materials.
+        * If you want, add a special effect to the material in the MaterialEffects class! This helps spice up variety.
         */
 
         Item.ToolMaterial TUTORIAL = EnumHelper.addToolMaterial("TUTORIAL", 3, 1000, 15.0F, 4.0F, 30);
@@ -74,6 +80,12 @@ public class ModItems
         shears_gold=new ItemCustomShears(Item.ToolMaterial.GOLD);
         shears_diamond=new ItemCustomShears(Item.ToolMaterial.DIAMOND);
         shears_tutorial=new ItemCustomShears(TUTORIAL);
+        scythe_wood=new ItemScythe(Item.ToolMaterial.WOOD);
+        scythe_stone=new ItemScythe(Item.ToolMaterial.STONE);
+        scythe_iron=new ItemScythe(Item.ToolMaterial.IRON);
+        scythe_gold=new ItemScythe(Item.ToolMaterial.GOLD);
+        scythe_diamond=new ItemScythe(Item.ToolMaterial.DIAMOND);
+        scythe_tutorial=new ItemScythe(TUTORIAL);
     }
 
     public static void register()
@@ -94,6 +106,12 @@ public class ModItems
         GameRegistry.register(shears_diamond);
         GameRegistry.register(shears_gold);
         GameRegistry.register(shears_tutorial);
+        GameRegistry.register(scythe_wood);
+        GameRegistry.register(scythe_stone);
+        GameRegistry.register(scythe_iron);
+        GameRegistry.register(scythe_gold);
+        GameRegistry.register(scythe_diamond);
+        GameRegistry.register(scythe_tutorial);
     }
 
     public static void registerRenders()
@@ -115,6 +133,12 @@ public class ModItems
         registerRender(shears_diamond);
         registerRender(shears_gold);
         registerRender(shears_tutorial);
+        registerRender(scythe_wood);
+        registerRender(scythe_stone);
+        registerRender(scythe_iron);
+        registerRender(scythe_gold);
+        registerRender(scythe_diamond);
+        registerRender(scythe_tutorial);
     }
 
     public static void registerOreDictionary()

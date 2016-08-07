@@ -1,9 +1,11 @@
 package com.t10a.minedran;
 
+import com.t10a.minedran.event.ItemReapingEvent;
 import com.t10a.minedran.init.ModItems;
 import com.t10a.minedran.init.ModRecipes;
 import com.t10a.minedran.proxy.ClientProxy;
 import com.t10a.minedran.reference.Reference;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -34,6 +36,7 @@ public class Minedran
         System.out.println("Initialisation!");
         ModRecipes.register();
         proxy.init();
+        MinecraftForge.EVENT_BUS.register(new ItemReapingEvent());
     }
 
     @Mod.EventHandler

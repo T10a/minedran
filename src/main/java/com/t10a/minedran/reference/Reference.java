@@ -19,7 +19,8 @@ public class Reference
         MODAXE("modaxe","ItemModAxe"),
         MODPICKAXE("modpickaxe", "ItemModPickaxe"),
         MODSHOVEL("modshovel", "ItemModShovel"),
-        MODHOE("modhoe", "ItemModHoe");
+        MODHOE("modhoe", "ItemModHoe"),
+        SCYTHE("scythe", "ItemScythe");
 
         private String unlocalizedName;
         private String registryName;

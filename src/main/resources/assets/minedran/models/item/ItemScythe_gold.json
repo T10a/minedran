@@ -1,0 +1,93 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "minedran:items/scythe_gold"
+    },
+    "display": {
+		 "ground": {
+            "rotation": [
+                0,
+                0,
+                0
+            ],
+            "translation": [
+                0,
+                3,
+                0
+            ],
+            "scale": [
+                1,
+                1,
+                0.5
+            ]
+        },
+        "thirdperson_righthand": {
+            "rotation": [
+                0,
+                -90,
+                55
+            ],
+            "translation": [
+                0,
+                10,
+                0.5
+            ],
+            "scale": [
+                2.0,
+                2.0,
+                1.0
+            ]
+        },
+        "thirdperson_lefthand": {
+            "rotation": [
+                0,
+                90,
+                -55
+            ],
+            "translation": [
+                0,
+                10,
+                0.5
+            ],
+            "scale": [
+                2.0,
+                2.0,
+                1.0
+            ]
+        },
+        "firstperson_righthand": {
+            "rotation": [
+                0,
+                -95,
+                30
+            ],
+            "translation": [
+                2.13,
+                6,
+                0.13
+            ],
+            "scale": [
+                2.0,
+                2.0,
+                1.0
+            ]
+        },
+        "firstperson_lefthand": {
+            "rotation": [
+                0,
+                95,
+                -30
+            ],
+            "translation": [
+                2.13,
+                6,
+                0.13
+            ],
+            "scale": [
+                2.0,
+                2.0,
+                1.0
+            ]
+        }
+    }
+}
