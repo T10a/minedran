@@ -1,6 +1,7 @@
 package com.t10a.minedran;
 
 import com.t10a.minedran.init.ModItems;
+import com.t10a.minedran.init.ModRecipes;
 import com.t10a.minedran.proxy.ClientProxy;
 import com.t10a.minedran.reference.Reference;
 import net.minecraftforge.fml.common.Mod;
@@ -24,12 +25,14 @@ public class Minedran
         System.out.println("Pre Initialisation!");
         ModItems.init();
         ModItems.register();
+        ModItems.registerOreDictionary();
     }
 
     @Mod.EventHandler
     public void Init(FMLInitializationEvent event)
     {
         System.out.println("Initialisation!");
+        ModRecipes.register();
         proxy.init();
     }
 

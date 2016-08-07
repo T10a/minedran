@@ -10,11 +10,11 @@ public class Reference
     public static final String CLIENT_PROXY_CLASS = "com.t10a.minedran.proxy.ClientProxy";
     public static final String SERVER_PROXY_CLASS = "com.t10a.minedran.proxy.ServerProxy";
 
-    public static final String SHORTNAME = "md";
-
     public enum ItemBase
     {
+        TUTORIAL("tutorial", "ItemTutorial"),
         MACE("mace", "ItemMace"),
+        SHEARS("shears", "ItemShears"),
         MODSWORD("modsword","ItemModSword"),
         MODAXE("modaxe","ItemModAxe"),
         MODPICKAXE("modpickaxe", "ItemModPickaxe"),

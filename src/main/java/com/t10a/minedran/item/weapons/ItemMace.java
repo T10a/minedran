@@ -27,7 +27,7 @@ public class ItemMace extends ItemTool
 {
     //Dummy set to get the tool class to shut up. Also, stops the crashing. I know, I could set a custom item like the sword.
     private static final Set<Block> MaceBlocks = Sets.newHashSet(new Block[] {Blocks.BEDROCK});
-    private final Item.ToolMaterial material;
+    public final Item.ToolMaterial material;
 
     public ItemMace(ToolMaterial material) {
         super(1.0F, -2.8F, material, MaceBlocks);

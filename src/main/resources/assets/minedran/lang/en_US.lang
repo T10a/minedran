@@ -2,11 +2,15 @@ item.minedran.mace_wood.name=Wooden Mace
 item.minedran.mace_stone.name=Stone Mace
 item.minedran.mace_iron.name=Iron Mace
 item.minedran.mace_gold.name=Golden Mace
+item.minedran.shears_gold.name=Golden Shears
 item.minedran.mace_diamond.name=Diamond Mace
+item.minedran.shears_diamond.name=Diamond Shears
 
+item.minedran.tutorial.name=Placeholder Tutorial Item
 item.minedran.modaxe_tutorial.name=Placeholder Tutorial Axe
 item.minedran.modsword_tutorial.name=Placeholder Tutorial Sword
 item.minedran.modpickaxe_tutorial.name=Placeholder Tutorial Pickaxe
 item.minedran.modshovel_tutorial.name=Placeholder Tutorial Shovel
 item.minedran.modhoe_tutorial.name=Placeholder Tutorial Hoe
 item.minedran.mace_tutorial.name=Placeholder Tutorial Mace
+item.minedran.shears_tutorial.name=Placeholder Tutorial Shears
