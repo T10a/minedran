@@ -23,6 +23,12 @@ public class ModRecipes
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.mace_tutorial), "tt ", "tt ", " s ", 't', "tutorial", 's', "stickWood"));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.shears_gold), "   ", " g ", "g  ", 'g', "ingotGold"));
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.shears_tutorial), "   ", " t ", "t  ", 't', "tutorial"));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.scythe_wood), "www"," ss", "  s", 'w', "plankWood",'s',"stickWood"));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.scythe_stone), "rrr"," ss", "  s", 'r', "cobblestone",'s',"stickWood"));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.scythe_iron), "iii"," ss", "  s", 'i', "ingotIron",'s',"stickWood"));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.scythe_gold), "ggg"," ss", "  s", 'g', "ingotGold",'s',"stickWood"));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.scythe_diamond), "ddd"," ss", "  s", 'd', "gemDiamond",'s',"stickWood"));
+        GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(ModItems.scythe_tutorial), "ttt"," ss", "  s", 't', "tutorial",'s',"stickWood"));
         // Shapeless recipes go here.
 
         //Special recipes go down here.
