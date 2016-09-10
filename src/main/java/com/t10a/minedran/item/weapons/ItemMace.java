@@ -1,6 +1,7 @@
 package com.t10a.minedran.item.weapons;
 
 import com.google.common.collect.Sets;
+import com.t10a.minedran.Minedran;
 import com.t10a.minedran.item.MaterialEffects;
 import com.t10a.minedran.reference.Reference;
 import net.minecraft.block.Block;
@@ -35,10 +36,11 @@ public class ItemMace extends ItemTool
         this.material = material;
         this.efficiencyOnProperMaterial = 0.0F;
 
-        setCreativeTab(CreativeTabs.COMBAT);
+        setCreativeTab(Minedran.MINEDRAN_ITEMS);
+        String name = "mace";
         //It's a good idea to put the mod id in front of the unlocalised name. Otherwise, naming conflicts may arise.
-        setUnlocalizedName(Reference.MOD_ID + "." + Reference.ItemBase.MACE.getUnlocalizedName() + "_" + getToolMaterialName().toLowerCase());
-        setRegistryName(Reference.ItemBase.MACE.getRegistryName()  + "_" + getToolMaterialName().toLowerCase());
+        setUnlocalizedName(Reference.MOD_ID + "." + getToolMaterialName().toLowerCase() + "_" + name);
+        setRegistryName(Reference.MOD_ID, getToolMaterialName().toLowerCase() + "_" + name);
     }
 
     @Override
@@ -69,4 +71,3 @@ public class ItemMace extends ItemTool
         return true;
     }
 }
-

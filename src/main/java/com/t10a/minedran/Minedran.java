@@ -1,10 +1,12 @@
 package com.t10a.minedran;
 
+import com.t10a.minedran.creativetab.MinedranItemTab;
 import com.t10a.minedran.event.ItemReapingEvent;
 import com.t10a.minedran.init.ModItems;
 import com.t10a.minedran.init.ModRecipes;
 import com.t10a.minedran.proxy.ClientProxy;
 import com.t10a.minedran.reference.Reference;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -20,6 +22,8 @@ public class Minedran
 
     @SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS,serverSide = Reference.SERVER_PROXY_CLASS)
     public static ClientProxy proxy;
+
+    public static final CreativeTabs MINEDRAN_ITEMS = new MinedranItemTab();
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event)

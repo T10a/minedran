@@ -1,5 +1,6 @@
 package com.t10a.minedran.item.weapons;
 
+import com.t10a.minedran.Minedran;
 import com.t10a.minedran.item.MaterialEffects;
 import com.t10a.minedran.reference.Reference;
 import net.minecraft.creativetab.CreativeTabs;
@@ -17,10 +18,12 @@ public class ItemCustomSword extends ItemSword
         this.material = material;
         setMaxStackSize(1);
 
-        setCreativeTab(CreativeTabs.COMBAT);
+        setCreativeTab(Minedran.MINEDRAN_ITEMS);
         //It's a good idea to put the mod id in front of the unlocalised name. Otherwise, naming conflicts may arise.
-        setUnlocalizedName(Reference.MOD_ID + "." + Reference.ItemBase.MODSWORD.getUnlocalizedName() + "_" + getToolMaterialName().toLowerCase());
-        setRegistryName(Reference.ItemBase.MODSWORD.getRegistryName()  + "_" + getToolMaterialName().toLowerCase());
+        String name = "sword";
+        //It's a good idea to put the mod id in front of the unlocalised name. Otherwise, naming conflicts may arise.
+        setUnlocalizedName(Reference.MOD_ID + "." + getToolMaterialName().toLowerCase() + "_" + name);
+        setRegistryName(Reference.MOD_ID, getToolMaterialName().toLowerCase() + "_" + name);
     }
 
     @Override

@@ -15,7 +15,8 @@ public class MaterialEffects
         {
             if(target.getCreatureAttribute() == EnumCreatureAttribute.UNDEAD)
             {
-                target.addPotionEffect(new PotionEffect(MobEffects.INSTANT_HEALTH, 20));
+                target.addPotionEffect(new PotionEffect(MobEffects.WITHER, 20));
+                target.setFire(4);
             }
         }
     }

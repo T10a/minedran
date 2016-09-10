@@ -1,8 +1,9 @@
 package com.t10a.minedran.init;
 
-import com.t10a.minedran.item.material.ItemTutorial;
+import com.t10a.minedran.item.material.ItemMiscMaterial;
 import com.t10a.minedran.item.tools.*;
 import com.t10a.minedran.item.weapons.ItemCustomSword;
+import com.t10a.minedran.item.weapons.ItemLongbow;
 import com.t10a.minedran.item.weapons.ItemMace;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -36,6 +37,7 @@ public class ModItems
     public static Item scythe_gold;
     public static Item scythe_diamond;
     public static Item scythe_tutorial;
+    public static Item longbow;
 
     //public static Item.ToolMaterial <new toolmaterial name>
     public static Item.ToolMaterial TUTORIAL;
@@ -47,7 +49,7 @@ public class ModItems
         /*<name listed above>=new Item<name>();
          * Material items go here. You can also register any item here too, just in case.
 		 */
-        item_tutorial=new ItemTutorial();
+        item_tutorial=new ItemMiscMaterial("tutorial");
 
         /* Item.ToolMaterial <NAME OF MATERIAL> = EnumHelper.addToolMaterial("MaterialString", <mining level>, <durability>, <efficiency>, <damage>, <enchantability>);
         *  <NAME OF MATERIAL>.setRepairItem(new ItemStack(ModItems.<repair material name>
@@ -86,6 +88,7 @@ public class ModItems
         scythe_gold=new ItemScythe(Item.ToolMaterial.GOLD);
         scythe_diamond=new ItemScythe(Item.ToolMaterial.DIAMOND);
         scythe_tutorial=new ItemScythe(TUTORIAL);
+        longbow = new ItemLongbow();
     }
 
     public static void register()
@@ -112,6 +115,7 @@ public class ModItems
         GameRegistry.register(scythe_gold);
         GameRegistry.register(scythe_diamond);
         GameRegistry.register(scythe_tutorial);
+        GameRegistry.register(longbow);
     }
 
     public static void registerRenders()
@@ -139,6 +143,7 @@ public class ModItems
         registerRender(scythe_gold);
         registerRender(scythe_diamond);
         registerRender(scythe_tutorial);
+        registerRender(longbow);
     }
 
     public static void registerOreDictionary()

@@ -1,6 +1,7 @@
 package com.t10a.minedran.item.tools;
 
 import com.google.common.collect.Sets;
+import com.t10a.minedran.Minedran;
 import com.t10a.minedran.item.MaterialEffects;
 import com.t10a.minedran.reference.Reference;
 import net.minecraft.block.Block;
@@ -25,10 +26,11 @@ public class ItemScythe extends ItemTool
         this.material = material;
         setMaxStackSize(1);
 
-        setCreativeTab(CreativeTabs.TOOLS);
+        setCreativeTab(Minedran.MINEDRAN_ITEMS);
+        String name = "scythe";
         //It's a good idea to put the mod id in front of the unlocalised name. Otherwise, naming conflicts may arise.
-        setUnlocalizedName(Reference.MOD_ID + "." + Reference.ItemBase.SCYTHE.getUnlocalizedName() + "_" + getToolMaterialName().toLowerCase());
-        setRegistryName(Reference.ItemBase.SCYTHE.getRegistryName()  + "_" + getToolMaterialName().toLowerCase());
+        setUnlocalizedName(Reference.MOD_ID + "." + getToolMaterialName().toLowerCase() + "_" + name);
+        setRegistryName(Reference.MOD_ID, getToolMaterialName().toLowerCase() + "_" + name);
     }
     @Override
     public void addInformation(ItemStack stack, EntityPlayer player, List<String> list, boolean par4)

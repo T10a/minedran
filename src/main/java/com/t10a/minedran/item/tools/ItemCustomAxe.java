@@ -1,6 +1,7 @@
 package com.t10a.minedran.item.tools;
 
 
+import com.t10a.minedran.Minedran;
 import com.t10a.minedran.item.MaterialEffects;
 import com.t10a.minedran.reference.Reference;
 import net.minecraft.creativetab.CreativeTabs;
@@ -11,7 +12,6 @@ import net.minecraft.item.ItemStack;
 
 public class ItemCustomAxe extends ItemAxe
 {
-
     private final Item.ToolMaterial material;
     public ItemCustomAxe(Item.ToolMaterial material, float damage, float speed)
     {
@@ -19,10 +19,11 @@ public class ItemCustomAxe extends ItemAxe
         setMaxStackSize(1);
         this.material = material;
 
-        setCreativeTab(CreativeTabs.TOOLS);
+        setCreativeTab(Minedran.MINEDRAN_ITEMS);
+        String name = "axe";
         //It's a good idea to put the mod id in front of the unlocalised name. Otherwise, naming conflicts may arise.
-        setUnlocalizedName(Reference.MOD_ID + "." + Reference.ItemBase.MODAXE.getUnlocalizedName() + "_" + getToolMaterialName().toLowerCase());
-        setRegistryName(Reference.ItemBase.MODAXE.getRegistryName()  + "_" + getToolMaterialName().toLowerCase());
+        setUnlocalizedName(Reference.MOD_ID + "." + getToolMaterialName().toLowerCase() + "_" + name);
+        setRegistryName(Reference.MOD_ID, getToolMaterialName().toLowerCase() + "_" + name);
     }
 
     @Override
