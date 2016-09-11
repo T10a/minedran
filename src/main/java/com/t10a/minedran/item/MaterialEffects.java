@@ -6,6 +6,7 @@ import net.minecraft.entity.EnumCreatureAttribute;
 import net.minecraft.init.MobEffects;
 import net.minecraft.item.Item;
 import net.minecraft.potion.PotionEffect;
+import net.minecraft.util.DamageSource;
 
 public class MaterialEffects
 {
@@ -15,8 +16,8 @@ public class MaterialEffects
         {
             if(target.getCreatureAttribute() == EnumCreatureAttribute.UNDEAD)
             {
-                target.addPotionEffect(new PotionEffect(MobEffects.WITHER, 20));
-                target.setFire(4);
+                target.attackEntityFrom(DamageSource.magic, 5);
+                target.setFire(5);
             }
         }
     }

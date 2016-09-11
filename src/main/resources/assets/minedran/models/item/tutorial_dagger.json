@@ -1,0 +1,9 @@
+{
+    "parent": "item/handheld",
+    "textures": {
+        "layer0": "minedran:items/tutorial_dagger"
+    },
+    "overrides": [
+      { "predicate": { "sneaking": 1 }, "model": "minedran:item/tutorial_dagger_sneaky" }
+    ]
+}

@@ -1,20 +1,29 @@
 item.minedran.wood_mace.name=Wooden Mace
 item.minedran.wood_scythe.name=Wooden Scythe
 item.minedran.greatsword_wood.name=Wooden Greatsword
+item.minedran.wood_dagger.name=Wooden Dagger
+
 item.minedran.stone_mace.name=Stone Mace
 item.minedran.stone_scythe.name=Stone Scythe
 item.minedran.greatsword_stone.name=Stone Greatsword
+item.minedran.stone_dagger.name=Stone Dagger
+
 item.minedran.iron_mace.name=Iron Mace
 item.minedran.iron_scythe.name=Iron Scythe
 item.minedran.greatsword_iron.name=Iron Greatsword
+item.minedran.iron_dagger.name=Iron Dagger
+
 item.minedran.gold_mace.name=Golden Mace
 item.minedran.gold_scythe.name=Golden Scythe
 item.minedran.gold_shears.name=Golden Shears
 item.minedran.greatsword_gold.name=Golden Greatsword
+item.minedran.gold_dagger.name=Golden Dagger
+
 item.minedran.diamond_mace.name=Diamond Mace
 item.minedran.diamond_shears.name=Diamond Shears
 item.minedran.diamond_scythe.name=Diamond Scythe
 item.minedran.greatsword_diamond.name=Diamond Greatsword
+item.minedran.diamond_dagger.name=Diamond Dagger
 
 item.minedran.tutorial.name=Placeholder Tutorial Item
 item.minedran.tutorial_axe.name=Placeholder Tutorial Axe
@@ -26,6 +35,7 @@ item.minedran.tutorial_mace.name=Placeholder Tutorial Mace
 item.minedran.tutorial_shears.name=Placeholder Tutorial Shears
 item.minedran.tutorial_scythe.name=Placeholder Tutorial Scythe
 item.minedran.greatsword_tutorial.name=Placeholder Tutorial Greatsword
+item.minedran.tutorial_dagger.name=Placeholder Tutorial Dagger
 
 item.minedran.longbow.name=Longbow
 

@@ -22,7 +22,9 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 import javax.annotation.Nullable;
-
+/* A powerful bow, with bigger arms, longer string & overall more durable construction. This bow is easily capable of hitting targets at a long distance with considerable force.
+ * COMPLETION: 100% (Outside of balance tweaks and inevitable bug fixes, this item is complete.)
+ */
 public class ItemLongbow extends ItemBow
 {
     public ItemLongbow() {
@@ -88,7 +90,7 @@ public class ItemLongbow extends ItemBow
             if (!worldIn.isRemote) {
                 ItemArrow itemarrow = (ItemArrow) (itemstack.getItem() instanceof ItemArrow ? itemstack.getItem() : Items.ARROW);
                 EntityArrow entityarrow = itemarrow.createArrow(worldIn, itemstack, entityplayer);
-                entityarrow.setAim(entityplayer, entityplayer.rotationPitch, entityplayer.rotationYaw, 0.0F, drawRatio * (3.0F), 0.25F);
+                entityarrow.setAim(entityplayer, entityplayer.rotationPitch, entityplayer.rotationYaw, 0.0F, drawRatio * 4.5F, 0.25F);
 
                 if (drawRatio == 1.0F) {
                     entityarrow.setIsCritical(true);
@@ -111,7 +113,7 @@ public class ItemLongbow extends ItemBow
                     entityarrow.pickupStatus = EntityArrow.PickupStatus.CREATIVE_ONLY;
                 }
 
-                entityarrow.setDamage(entityarrow.getDamage() + 2);
+                entityarrow.setDamage(entityarrow.getDamage());
 
                 worldIn.spawnEntityInWorld(entityarrow);
             }
@@ -145,7 +147,6 @@ public class ItemLongbow extends ItemBow
         }
     }
 
-
     @Override
     public int getMaxItemUseDuration(ItemStack stack) {
         return 72000;
@@ -156,7 +157,7 @@ public class ItemLongbow extends ItemBow
      * being used
      */
     @Override
-    public EnumAction getItemUseAction(ItemStack p_77661_1_) {
+    public EnumAction getItemUseAction(ItemStack stack) {
         return EnumAction.BOW;
     }
 

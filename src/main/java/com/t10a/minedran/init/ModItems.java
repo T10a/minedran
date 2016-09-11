@@ -3,6 +3,7 @@ package com.t10a.minedran.init;
 import com.t10a.minedran.item.material.ItemMiscMaterial;
 import com.t10a.minedran.item.tools.*;
 import com.t10a.minedran.item.weapons.ItemCustomSword;
+import com.t10a.minedran.item.weapons.ItemDagger;
 import com.t10a.minedran.item.weapons.ItemLongbow;
 import com.t10a.minedran.item.weapons.ItemMace;
 import net.minecraft.client.Minecraft;
@@ -38,6 +39,12 @@ public class ModItems
     public static Item scythe_diamond;
     public static Item scythe_tutorial;
     public static Item longbow;
+    private static Item wood_dagger;
+    private static Item stone_dagger;
+    private static Item iron_dagger;
+    private static Item gold_dagger;
+    private static Item diamond_dagger;
+    private static Item tutorial_dagger;
 
     //public static Item.ToolMaterial <new toolmaterial name>
     public static Item.ToolMaterial TUTORIAL;
@@ -89,6 +96,12 @@ public class ModItems
         scythe_diamond=new ItemScythe(Item.ToolMaterial.DIAMOND);
         scythe_tutorial=new ItemScythe(TUTORIAL);
         longbow = new ItemLongbow();
+        wood_dagger = new ItemDagger(Item.ToolMaterial.WOOD);
+        stone_dagger = new ItemDagger(Item.ToolMaterial.STONE);
+        iron_dagger = new ItemDagger(Item.ToolMaterial.IRON);
+        gold_dagger = new ItemDagger(Item.ToolMaterial.GOLD);
+        diamond_dagger = new ItemDagger(Item.ToolMaterial.DIAMOND);
+        tutorial_dagger = new ItemDagger(TUTORIAL);
     }
 
     public static void register()
@@ -116,6 +129,12 @@ public class ModItems
         GameRegistry.register(scythe_diamond);
         GameRegistry.register(scythe_tutorial);
         GameRegistry.register(longbow);
+        GameRegistry.register(wood_dagger);
+        GameRegistry.register(stone_dagger);
+        GameRegistry.register(iron_dagger);
+        GameRegistry.register(gold_dagger);
+        GameRegistry.register(diamond_dagger);
+        GameRegistry.register(tutorial_dagger);
     }
 
     public static void registerRenders()
@@ -144,6 +163,12 @@ public class ModItems
         registerRender(scythe_diamond);
         registerRender(scythe_tutorial);
         registerRender(longbow);
+        registerRender(wood_dagger);
+        registerRender(stone_dagger);
+        registerRender(iron_dagger);
+        registerRender(gold_dagger);
+        registerRender(diamond_dagger);
+        registerRender(tutorial_dagger);
     }
 
     public static void registerOreDictionary()
