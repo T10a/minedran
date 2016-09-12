@@ -152,10 +152,6 @@ public class ItemLongbow extends ItemBow
         return 72000;
     }
 
-    /**
-     * returns the action that specifies what animation to play when the items is
-     * being used
-     */
     @Override
     public EnumAction getItemUseAction(ItemStack stack) {
         return EnumAction.BOW;

@@ -1,0 +1,28 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "minedran:items/wood_halberd"
+    },
+    "display": {
+        "thirdperson_righthand": {
+            "rotation": [ 0, -270, 55 ],
+            "translation": [ 0, 8.0, 0.5 ],
+            "scale": [ 1.7, 1.7, 1.0 ]
+        },
+        "thirdperson_lefthand": {
+            "rotation": [ 0, 270, -55 ],
+            "translation": [ 0, 8.0, 0.5 ],
+            "scale": [ 1.7, 1.7, 1.0 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ -90, -95, 30 ],
+            "translation": [ 2.13, 0, 0.13 ],
+            "scale": [ 1.7, 1.7, 1.0 ]
+        },
+        "firstperson_lefthand": {
+            "rotation": [ -90, 95, -30 ],
+            "translation": [ 2.13, 0, 0.13 ],
+            "scale": [ 1.7, 1.7, 1.0 ]
+        }
+    }
+}

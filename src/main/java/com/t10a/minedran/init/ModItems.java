@@ -2,10 +2,7 @@ package com.t10a.minedran.init;
 
 import com.t10a.minedran.item.material.ItemMiscMaterial;
 import com.t10a.minedran.item.tools.*;
-import com.t10a.minedran.item.weapons.ItemCustomSword;
-import com.t10a.minedran.item.weapons.ItemDagger;
-import com.t10a.minedran.item.weapons.ItemLongbow;
-import com.t10a.minedran.item.weapons.ItemMace;
+import com.t10a.minedran.item.weapons.*;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -45,6 +42,12 @@ public class ModItems
     private static Item gold_dagger;
     private static Item diamond_dagger;
     private static Item tutorial_dagger;
+    private static Item wood_halberd;
+    private static Item stone_halberd;
+    private static Item iron_halberd;
+    private static Item gold_halberd;
+    private static Item diamond_halberd;
+    private static Item tutorial_halberd;
 
     //public static Item.ToolMaterial <new toolmaterial name>
     public static Item.ToolMaterial TUTORIAL;
@@ -102,6 +105,12 @@ public class ModItems
         gold_dagger = new ItemDagger(Item.ToolMaterial.GOLD);
         diamond_dagger = new ItemDagger(Item.ToolMaterial.DIAMOND);
         tutorial_dagger = new ItemDagger(TUTORIAL);
+        wood_halberd = new ItemHalberd(Item.ToolMaterial.WOOD);
+        stone_halberd = new ItemHalberd(Item.ToolMaterial.STONE);
+        iron_halberd = new ItemHalberd(Item.ToolMaterial.IRON);
+        gold_halberd = new ItemHalberd(Item.ToolMaterial.GOLD);
+        diamond_halberd = new ItemHalberd(Item.ToolMaterial.DIAMOND);
+        tutorial_halberd = new ItemHalberd(TUTORIAL);
     }
 
     public static void register()
@@ -135,6 +144,12 @@ public class ModItems
         GameRegistry.register(gold_dagger);
         GameRegistry.register(diamond_dagger);
         GameRegistry.register(tutorial_dagger);
+        GameRegistry.register(wood_halberd);
+        GameRegistry.register(stone_halberd);
+        GameRegistry.register(iron_halberd);
+        GameRegistry.register(gold_halberd);
+        GameRegistry.register(diamond_halberd);
+        GameRegistry.register(tutorial_halberd);
     }
 
     public static void registerRenders()
@@ -169,6 +184,12 @@ public class ModItems
         registerRender(gold_dagger);
         registerRender(diamond_dagger);
         registerRender(tutorial_dagger);
+        registerRender(wood_halberd);
+        registerRender(stone_halberd);
+        registerRender(iron_halberd);
+        registerRender(gold_halberd);
+        registerRender(diamond_halberd);
+        registerRender(tutorial_halberd);
     }
 
     public static void registerOreDictionary()
